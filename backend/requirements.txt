@@ -8,3 +8,4 @@ torch==2.0.1
 langchain==0.0.208
 dnspython==2.7.0
 huggingface_hub
+starlette==0.27.0

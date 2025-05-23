@@ -1,0 +1,162 @@
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* changed from space-between to center */
+  align-items: center;      /* added */
+  height: 100vh;
+  background-color: #d3d3d3;
+  padding: 0 6rem;           /* removed top/bottom padding */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.landing-wrapper.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Inner Flex Container */
+.landing-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 2rem; /* Added spacing between left and right */
+  max-width: 1200px; /* Prevent overflow and ensure consistent width */
+  width: 100%;
+  padding-left: 3rem;
+}
+
+/* Left Logo Section */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 280px;
+  height: auto;
+  animation: floatIn 1.2s ease forwards;
+  margin-bottom: 1rem;
+}
+
+/* Divider */
+.vertical-divider {
+  width: 2px;
+  background-color: #1c1c1c;
+  height: 270px; /* Fixed height for alignment */
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Right Section */
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: slideIn 1s ease forwards;
+  padding-left: 2.5rem;
+}
+
+.headline {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.1;
+  align-self: initial;
+  max-width: 700px;
+  margin-top: 0;      /* <- ensures no top margin */
+  padding-top: 0;     /* <- ensures no top padding */
+}
+
+
+.red-dot {
+  color: red;
+  animation: pulse 1.5s infinite;
+}
+
+/* Button */
+.chatbot-button {
+  margin-top: 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.2rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+/* Description at Bottom */
+.description {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #222;
+  margin-top: 3rem;
+  padding: 0 4rem;
+  animation: fadeInUp 1.2s ease forwards;
+  line-height: 1.6;
+}
+
+/* Hover remains unchanged */
+.chatbot-button:hover {
+  background-color: #333;
+}
+
+/* Animations unchanged */
+@keyframes floatIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.6; }
+}
