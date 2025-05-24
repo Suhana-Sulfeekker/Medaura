@@ -1,4 +1,4 @@
-# 🧠 Medaura
+# Medaura
 
 **Medaura** is an AI-powered health assistant designed to analyze symptoms, summarize lab reports, and answer medical questions using **LLaMA3-OpenBioLLM-70B**.  
 Built with **FastAPI**, **React.js**, and **MongoDB**, Medaura bridges advanced biomedical NLP with a user-friendly interface.
