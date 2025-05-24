@@ -12,3 +12,4 @@ db = client[DATABASE_NAME]
 
 symptom_collection = db["symptom_diagnoses"]
 chat_collection = db["chat_history"]
+pdf_collection=db["pdf_summary"]

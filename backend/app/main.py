@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import chat
+from app.routes import chat, symptom, pdf_summary
 
 app = FastAPI(title="Medaura Backend")
 
@@ -15,3 +15,5 @@ app.add_middleware(
 
 
 app.include_router(chat.router, prefix="/chat", tags=["chat"])
+app.include_router(symptom.router, prefix="/symptom-analysis", tags=["symptom-analysis"])
+app.include_router(pdf_summary.router, prefix="/pdf-summary", tags=["pdf-summary"])
