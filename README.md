@@ -32,8 +32,8 @@ Built with **FastAPI**, **React.js**, and **MongoDB**, Medaura bridges advanced 
 
 ## 🎥 Demo Video
 
-![Demo 1](https://drive.google.com/file/d/1YZi7bi3389d57jYdRSwIDm9Gpok8I2-c/view?usp=sharing)
-![Demo 2](https://drive.google.com/file/d/12afNIQMRnxeHrUfbkPVi5edi6dlTpMZ2/view?usp=sharing)
+https://drive.google.com/file/d/1YZi7bi3389d57jYdRSwIDm9Gpok8I2-c/view?usp=sharing
+https://drive.google.com/file/d/12afNIQMRnxeHrUfbkPVi5edi6dlTpMZ2/view?usp=sharing
 
 ---
 
